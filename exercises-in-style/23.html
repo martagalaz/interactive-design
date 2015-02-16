@@ -8,8 +8,10 @@ div {
     background: red;
     position: relative;
     left: 85px;
-    -webkit-animation: myfirst 5s linear 3s infinite alternate; /* Chrome, Safari, Opera */
-    animation: myfirst 5s linear 3s infinite alternate;
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+    -webkit-animation: myfirst 10s linear 10s infinite alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 10s linear 10s infinite alternate 
 }
 
 h1 {
@@ -21,17 +23,17 @@ h1 {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {
     0%   {background:red; top:0px;}
-    25%  {background:black; top:0px;}
-    50%  {background:red; top:130px;}
-    75%  {background:black; top:0px;}
-    100% {background:red; top:130px;}
+    25%  {background:black; top:130px;}
+    50%  {background:red; top:400px;}
+    75%  {background:black; top:130px;}
+    100% {background:red; top:0px;}
 }
 
 /* Standard syntax */
 @keyframes myfirst {
     0%   {background:red; top:0px;}
     25%  {background:black;  top:130px;}
-    50%  {background:red; top:0px;}
+    50%  {background:red; top:400px;}
     75%  {background:black; top:130px;}
     100% {background:red; top:0px;}
 }
