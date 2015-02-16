@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 370px;
+    height: 42px;
+    background: red;
+    position: relative;
+    left: 85px;
+    -webkit-animation: myfirst 5s linear 3s infinite alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 5s linear 3s infinite alternate;
+}
+
+h1 {
+            font-family: helvetica;
+            text-decoration: underline;
+            margin: 20px;
+        }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background:red; top:0px;}
+    25%  {background:black; top:0px;}
+    50%  {background:red; top:130px;}
+    75%  {background:black; top:0px;}
+    100% {background:red; top:130px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background:red; top:0px;}
+    25%  {background:black;  top:130px;}
+    50%  {background:red; top:0px;}
+    75%  {background:black; top:130px;}
+    100% {background:red; top:0px;}
+}
+</style>
+</head>
+<body>
+<a href="18.html"><div></div></a>
+
+<aside>
+        <h1>&nbsp;&nbsp;&nbsp;<sup>H</sup><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>E</sup><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>L</sup><br><br>&nbsp;&nbsp;&nbsp;<sup>L</sup><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>0</sup></h1>
+    </aside>
+
+</body>
+</html>
