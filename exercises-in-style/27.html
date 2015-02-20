@@ -21,7 +21,7 @@
 		width: 100%;
 	}
 
-	p { 
+		p { 
 		width: 16%;
 		margin-left: 5px;
 		float: left;
@@ -33,6 +33,7 @@
 		border-style: solid;
 		border-width: 5px;
 	}
+
 
 	.header { 
 		display: inline-block;
@@ -72,21 +73,25 @@
 		width: 16%;
 	}
 
-	p { 
-		width: 16%;
-		margin-left: 5px;
-		float: left;
-		position: relative;
-		padding: 10px;
-		text-align: left;
-		margin-top: 0;
-		margin-bottom: 0;
-		border-style: solid;
-		border-width: 5px;
-		margin-top: 0px
+	/* unvisited link */
+	a:link {
+	    color: black;
 	}
 
+	/* visited link */
+	a:visited {
+	    color: black;
+	}
 
+	/* mouse over link */
+	a:hover {
+	    color: #183DCF;
+	}
+
+	/* selected link */
+	a:active {
+	    color: #183DCF;
+	}
 
     </style>
   </head>
@@ -100,7 +105,7 @@
 		<em>Froth on the Daydream/</em><br> 
 		Boris Vian, 1947/<br> 
 		Translation/ <br> 
-		by Stanley Chapman/		
+		by Stanley Chapman/	
 	</div>
 
 	<div class="main">
