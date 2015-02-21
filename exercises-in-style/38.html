@@ -4,58 +4,109 @@
     <title>Froth on the Daydream</title>
     <style>
 
+    	html { 
+  		background: url(Images/01.jpg) no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+		}
+
     	body {
     		-webkit-font-smoothing: antialiased !important;
-    		margin-top: 0px;
-    		padding-bottom: 200px;
-    		}
-
-    	#info {
-    		cursor: pointer;
-			position: absolute;
-			left: 12px;
-			top: 38px;
-			width: 120px;
-			padding: 0px;
-			display: inline;
-			font-size: 10px;
-			font-family: Arial, Helvetica, sans-serif;
-			line-height: 12px;
+    		width: 620px;
+			margin: auto;
+    		font-family: Arial, Verdana, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 16px;
+			display: block;	
 			}
 
-			#main {
-			font-family: Arial, Helvetica, sans-serif;
+
+   		aside {	
+				color: rgb(255, 110, 0);
+				display: block;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+				height: 56px;
+				line-height: 14px;
+				padding-left: 12px;
+				padding-right: 12px;
+				padding-top: 12px;
+				width: 300px;
+				text-align: left;
+				width: 324px;
+				margin-bottom: 0px;
+				margin-left: 120px;
+		}
+
+		p {
+			margin-top: 1em;
+			margin-after: 1em;
+			padding-bottom: 12px;
+			padding-left: 12px;
+			padding-right: 12px;
+			padding-top: 12px;
+			border: solid 4 black;
+			color: rgba(0,0,0,0);
+		}
+
+		footer {
+				color: rgb(255, 110, 0);
+				display: block;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+				height: 56px;
+				line-height: 14px;
+				padding-bottom: 12px;
+				padding-left: 12px;
+				padding-right: 12px;
+				padding-top: 12px;
+				width: 300px;
+				margin-left: 120px;
+		}
+
+		p:hover {
+			color: black;
+			background: white;
+		}
+
+		.container {
+			margin-top: 0px;
+			display: block;
+			float: left;
+	}
+
+		.title {
+			font-size: 25px;
 			font-weight: bold;
-			font-size: 18px;
-			line-height: 23px;
-			margin-left: 200px;
-			width: 464px;
-			margin-top: 1px;
+			height: auto;
+			line-height: 29px;
+			width: auto;
+			padding-bottom: 0px;
+			padding-left: 0px;
+			padding-right: 0px;
 			padding-top: 0px;
-			}
-
-
-			footer {
-			font-family: arial, helvetica, sans-serif;
-			font-size: 10px;
-			color: #C0C0C0;
-			clear: both;
-			margin: 0;
-			padding: 30px 0 0 0;
-			text-align: right; 
-			}
+			margin-left: 1em;
+			display: inline;
+		}
 
     </style>
   </head>
 
   <body>
-  		<div id="info">
-			<p>Colin<br>finished<br>his bath</p>
-		</div>
-		
-		<div id="main">
 
-			<p><em>This is the first chapter of the French novel <br><u>Froth on the Daydream</u>by Boris Vian, 1947. <br> Translation by Stanley Chapman</em></p>
+  	<aside> 
+  		<em>Froth on the Daydream</em><br>by Boris Vian
+  	</aside>
+
+	<div class="container">
+
+			<p class="title">
+				COLIN FINISHED HIS BATH
+			</p>
+
+    		<p><em>This is the first chapter of the French novel <u>Froth on the Daydream</u> by Boris Vian, 1947. <br> Translation by Stanley Chapman</em></p>
 
 			<p>Colin finished his bath. He got out and wrapped himself in a thick woolly towel with his legs coming out at the bottom and his top coming out at the top. He took the hair-oil from the glass shelf and sprayed its pulverized perfume on to his yellow hair. His golden comb separated the silky mop into long honeyed strands like the furrows that a happy farmer's fork ploughs through apricot jam. Colin put back his comb and, seizing the nail-clippers, bevelled the comers of his eggshell eyelids, adding a touch of mystery to his appearance. He often had to do this because they grew again so quickly. He put on the little light over the magnifying mirror and went up close to it to examine the condition of his epidermis. A few blackheads were sprouting at the sides of his nose near his nostrils. When they saw themselves in the magnifying mirror and realized how ugly they were, they immediately jumped back under the skin. Colin put out the light and sighed with relief. He took the towel from his middle and slipped a comer of it between his toes to dry away the last signs of dampness. In the glass it was obvious that he was exactly like a fair-headed Sam E. Phray in a film by Jacques Goon Luddard. His face was smooth, his ears small, his nose straight and his complexion radiant. He was always smiling, as innocently as a baby, and through having done it so often a dimple had grown into his chin. He was reasonably tall and slim-hipped; he had long legs and was very, very nice. The name Colin suited him almost perfectly. He talked to girls with charm and to boys with pleasure. He was nearly always in a good mood&mdash;and the rest of the time he slept. 
 			</p>
@@ -75,13 +126,13 @@
 
 			<p>
 			He decorated the centre of the table with a pharmaceutical jar in which a pair of embryonic chickens seemed to be dancing Nijinsky's choreography for The Spectre of the Rose. Around it he arranged some branches of boot-lace mimosa&mdash;the gardener who worked for some friends of his had cultivated this by grafting some strips of the black liquorice ribbons sold by haberdashers when school is over on to ordinary bobbled mimosa. Then for each of them he took some white china plates with filigree designs in gold and stainless steel knives and forks with perforated handles inside each of which a stuffed ladybird, floating between two layers of perspex, brought good luck. He added crystal goblets and serviettes folded into bishops' mitres; this took him quite a time. He had hardly finished all this when the bell sprang off the wall to let him know that Chick had arrived.
-			<p/>
+			</p>
 
 			<p>
 			Colin smoothed out an imaginary crease in the tablecloth and went to open the door.
 			</p>
 
-			</p>
+			<p>
 			'How are you?' asked Chick.
 			</p>
 
@@ -188,7 +239,11 @@
 			<p>
 			And so life bubbles along. Chick has one thing that Colin lacks&mdash;a girlfriend, and Colin desperately wants to be in love. Nicolas, drawing on his own mystical powers and the help of Duke Ellington, somehow draws forth the spirit of an Ellington tune "Chloe". Colin and Chloe rush headlong through courtship towards marriage. 
 			</p>
-			</div> 
+	</div>
 
-		 </body>
+	<footer> 
+		Thank you for coming!  
+	</footer>
+
+	  </body>
 </html>
