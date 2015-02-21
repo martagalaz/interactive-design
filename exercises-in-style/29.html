@@ -44,10 +44,12 @@
 	}
 
 	.header {
+		position: absolute;
 		padding: 18px;
 		height: 200px;
 		margin-left: 0px;
-		margin-top: 160px;
+		margin-top: 300px;
+		width: 100%;
 
 		font-family: 'PT Sans Narrow', sans-serif;
 		text-transform: uppercase;
@@ -56,29 +58,41 @@
 		line-height: 80px;
 
 		color: white;
-		background-color: red;
+		background-color: black;
+
+		z-index: 1;
 	}
 
 	.header:hover {
-		-webkit-transform: rotateZ(-30deg);
-        -ms-transform: rotateZ(-30deg);
-        transform: rotateZ(-30deg);
+		position: absolute;
+		-webkit-transform: rotateZ(-90deg);
+        -ms-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
         width: 100%;
+        background-color: red;
 	}
 
-	.main {
-		padding-left: 12px;
+
+
+	.overall {
+		position: relative;
+		margin: 0 auto;
 	}
 
 	.title { 
+		position: relative;
+
 		font-family: 'PT Sans Narrow', sans-serif;
 		font-size: 96px;
 		line-height: 80px;
 		text-align: center;
+
 		padding-bottom: 20px;
 		padding-left: 10px;
 		padding-top: 20px;
 		margin: 0 auto;
+
+		z-index: 2;
 	}
 
     </style>
@@ -86,14 +100,21 @@
 
   <body>
 
-  	<div class="title">
-  		C<sup>O</sup>LL<sup>I</sup>N + <sup>∅</sup>
-	</div>
+  
 	 
-	<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/10.html">
-		<div class="header"> 
+	<div class="overall">
+
+		<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/10.html">
+			<div class="header"> 
+			~
+			</div>
+		</a>
+		
+		<div class="title">
+	  		C<sup>O</sup>LL<sup>I</sup>N + <sup>∅</sup>
 		</div>
-	</a>
+
+	</div>
 
  </body>
 </html>
