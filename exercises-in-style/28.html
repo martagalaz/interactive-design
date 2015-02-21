@@ -8,47 +8,36 @@
 	    color: #0000FF;
 	    webkit-font-smoothing: antialiased !important;
 		font-family: Times, serif;
-		font-size: 14px;
-		line-height: 20px;
-		font-weight: bold;
 	}
 
 	h1 { 
-		padding-top: 0px;
-		text-align: right;
+		text-align: left;
+		line-height: 25px;
+		margin: auto auto;
+		position: absolute;
 		font-weight: 900px;
 		font-size: 21px;
-		line-height: 25px;
-		margin: 0;
-		position: absolute;
-
 	}
 
 	p {	
 		width: 280px;
-		float: left;
 		padding: 15px;
 		text-align: left;
 		margin-top: 0;
 		margin-bottom: 0;
-		position: relative;
+		position: fixed;
+		margin: auto auto;
 	}
 
-	div {
-		float: left;
-		position: relative;
-		display: inline-block;
-		margin-left: 40px
-		padding-bottom: 1em;
-		padding-top: 0px;
+	.container {
+		position: fixed;
+		width: 300px;
+		top: 20;
+		left: 30;
 	}
 
 	.border {
 		border: 5px outset;
-	}
-
-	.leftmargin {
-		margin-left: 350px;
 	}
 
 	/* unvisited link */
@@ -77,9 +66,11 @@
 
   	<body>
 
+  		<div class="container">
   		<p> 
   		<h1><a href="http://martagalaz.github.io/interactive-design/exercises-in-style/11.html"><p class="border">Don't Open, Colin Is Bathing </p></h1>
   		</p>
+  		</div>
 
 	</body>
 </html>
