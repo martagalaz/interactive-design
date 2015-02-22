@@ -1,0 +1,156 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Froth on the Daydream</title>
+      <script>
+    function show(ele)    {      
+    var links = ['link1','link2'];
+    var srcElement = document.getElementById(ele);      
+    var doShow = true;
+    if(srcElement != null && srcElement.style.display == "block")
+        doShow = false;
+    for( var i = 0; i < links.length; ++i )    {
+        var otherElement = document.getElementById(links[i]);      
+        if( otherElement != null )
+            otherElement.style.display = 'none';}
+    if( doShow )
+        srcElement.style.display='block';         
+    return false;}
+ 	</script>
+    <style>
+
+    body {
+		font-family: Helvetica, Arial, sans-serif, Verdana;
+		color: #000000;
+		font-size: 13px;
+		line-height: 18px;
+		height: 100%;
+		padding-left: 1em;
+		padding-right: 1em;
+		}
+
+	p { 
+		margin-right: 5px;
+		float: left;
+		position: relative;
+		padding: 20px;
+		text-align: left;
+		margin-top: 6;
+		margin-bottom: 0;
+		border-style: solid;
+		border-width: 1px;
+	}
+
+	p:hover {
+		border: dashed 1px #787878;
+		background-color: #F8F8F8 ; 
+	}
+
+	.header { 
+		padding-bottom: 20px;
+		border-style: solid;
+		border-width: 1px;
+		display: inline-block;
+		height: 87px;
+		width: 140px;
+	}
+
+	.header:hover {
+		border: dashed 1px #787878;
+		background-color: #F8F8F8 ; 
+	}
+
+	.main {
+		margin-top: 25px;
+		margin-left: 1em;
+		}
+
+	.first {
+		min-height: 1732px;
+		width: 15%;
+	}
+
+	.second {
+		min-height: 670px;
+		width: 15%;
+	}
+
+	.third {
+		min-height: 1930px;
+		width: 15%;
+	}
+	.fourth {
+		min-height: 1102px;
+		width: 15%;
+	}
+
+	.fifth {
+		min-height: 797px;
+		width: 16%;
+	}
+
+	/* unvisited link */
+	a:link {
+	    color: black;
+	}
+
+	/* visited link */
+	a:visited {
+	    color: black;
+	}
+
+	/* mouse over link */
+	a:hover {
+	    color: #183DCF;
+	}
+
+	/* selected link */
+	a:active {
+	    color: #183DCF;
+	}
+
+	hr {
+		margin-top: 25px;
+	}
+
+    </style>
+  </head>
+
+  <body>
+
+  	<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/12.html">
+	  	<div class="header">
+		</div>
+	</a>
+
+		<hr>
+
+	<div class="main">
+
+		<div class="main">
+
+			<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/12.html">
+				<p class="first">
+				</p>
+			</a>
+			
+			<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/12.html">
+				<p class="second">
+				</p>
+			</a>
+
+			<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/12.html">
+				<p class="third">
+				</p>
+			</a>
+
+			<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/12.html">
+			<p class="fourth">
+			</p>
+			</a>
+
+		</div>
+
+	</div>
+	  </body>
+</html>
