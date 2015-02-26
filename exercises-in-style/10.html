@@ -8,69 +8,77 @@
 
     <style>
 
+    @font-face {
+    font-family: 'helvetica_condensed_lightRg';
+    src: url('Fonts/Helvetica-Condensed-Light-webfont.eot');
+    src: url('Fonts/Helvetica-Condensed-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Helvetica-Condensed-Light-webfont.woff2') format('woff2'),
+         url('Fonts/Helvetica-Condensed-Light-webfont.woff') format('woff'),
+         url('Fonts/Helvetica-Condensed-Light-webfont.ttf') format('truetype'),
+         url('Fonts/Helvetica-Condensed-Light-webfont.svg#helvetica_condensed_lightRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-   html {
-   	left: 0;
-   }
+}
 
     body {
 	    -webkit-font-smoothing: antialiased !important;
-		font-family: helvetica, sans-serif
+		font-family: helvetica, sans-serif;
 		color: #000000;
 		font-size: 12px;
 		line-height: 16px;
 		height: 100%;
-		padding-right: 0px;
-		margin-left: 0px;
-		margin-right: 0px;
+		max-width: 100%;
 	}
 
 	.standout{
 		font-weight: bold;
 	}
 
-	img {
-		width: 100%
-	}
-
 	p { 
-		width: 100%;
+		max-width: 100%;
 		padding: 10px;
 		text-align: left;
 		margin-top: 0;
 		margin-bottom: 18px;
-		margin-left: 0px;
 		left: 0;
+	}
+
+	.container {
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.header {
 		width: 100%;
-		padding: 18px;
-		height: 200px;
-		margin-left: 0px;
-		margin-top: 160px;
-		font-family: 'PT Sans Narrow', sans-serif;
+		/*padding: 18px;*/
+		height: 180px;
+		/*margin-left: 10px;
+		margin-right: 13px;*/
+		margin-top: 120px;
+		font-family: 'helvetica_condensed_lightRg', sans-serif;
 		text-transform: uppercase;
-		font-weight: 40;
-		font-size: 96px;
+		font-size: 60px;
 		line-height: 80px;
 		color: white;
 		background-color: red;
-	
 	}
 
 	.main {
-		padding-left: 12px;
+		max-width: 100%;
+		padding-left: 10px;
+		padding-right: 20px;
+		margin-top: 20px;
 	}
 
 	.title { 
-		font-family: 'PT Sans Narrow', sans-serif;
-		font-size: 96px;
+		font-family: 'helvetica_condensed_lightRg', sans-serif;
+		font-size: 60px;
 		line-height: 80px;
 		text-align: center;
 		padding-bottom: 20px;
-		padding-left: 10px;
-		padding-top: 20px;
+		/*padding-left: 10px;
+		padding-top: 20px;*/
 	}
 
     </style>
@@ -78,14 +86,14 @@
   </head>
 
   <body>
-
+  	<div class="container">
   	<div class="title">
-  		FR<sup>O</sup>TH <sup>O</sup>N THE DAYD<sup>R</sup>EAM
+  		FR<sup>O</sup>TH <sup>O</sup>N THE D<sup>A</sup>YDRE<sup>A</sup>M
 	</div>
 
-	<p class="header"> 
-		By Boris Vian
-	</p>
+	<div class="header"> 
+		<p>By Boris Vian</p>
+	</div>
 
 	<div class="main">
 			<p>
@@ -109,8 +117,6 @@
 			<br>
 			<br>
 			Colin smoothed out an imaginary crease in the tablecloth and went to open the door.
-
-
 			<p>
 			'How are you?' asked Chick.
 			<br>
@@ -194,6 +200,7 @@
 			And so life bubbles along. Chick has one thing that Colin lacks&mdash;a girlfriend, and Colin desperately wants to be in love. Nicolas, drawing on his own mystical powers and the help of Duke Ellington, somehow draws forth the spirit of an Ellington tune "Chloe". Colin and Chloe rush headlong through courtship towards marriage. 
 			</p>
 	</div>
+</div>
 </div>
 	  </body>
 </html>
