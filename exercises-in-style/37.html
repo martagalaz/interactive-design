@@ -3,19 +3,19 @@
     <meta charset="utf-8">
     <title>Hello</title>
     <script>
-    function show(ele)    {      
-    var links = ['link1','link2'];
-    var srcElement = document.getElementById(ele);      
-    var doShow = true;
-    if(srcElement != null && srcElement.style.display == "block")
-        doShow = false;
-    for( var i = 0; i < links.length; ++i )    {
-        var otherElement = document.getElementById(links[i]);      
-        if( otherElement != null )
-            otherElement.style.display = 'none';}
-    if( doShow )
-        srcElement.style.display='block';         
-    return false;}
+	    function show(ele)    {      
+	    var links = ['link1','link2'];
+	    var srcElement = document.getElementById(ele);      
+	    var doShow = true;
+	    if(srcElement != null && srcElement.style.display == "block")
+	        doShow = false;
+	    for( var i = 0; i < links.length; ++i )    {
+	        var otherElement = document.getElementById(links[i]);      
+	        if( otherElement != null )
+	            otherElement.style.display = 'none';}
+	    if( doShow )
+	        srcElement.style.display='block';         
+	    return false;}
  	</script>
 
     <style>
@@ -51,162 +51,157 @@
 				text-align: left; 
 				}
 
-    	 header {
-	    	 	text-align: center;
-	    	 	padding-bottom: 1px;
-	    	 	margin: 0;
-				padding: 0;
-				border: 0;
-				font: inherit;
-				vertical-align: baseline;
-				font-weight: normal;
-				margin-top: 0px;
-				padding-top: 0px;
-    	 }
+	    	 header {
+		    	 	text-align: center;
+		    	 	padding-bottom: 1px;
+		    	 	margin: 0;
+					padding: 0;
+					border: 0;
+					font: inherit;
+					vertical-align: baseline;
+					font-weight: normal;
+					margin-top: 0px;
+					padding-top: 0px;
+	    	 }
 
-    	 .container {
-	    	 	margin: 0px 0px;
-				padding: 0 10px;
-    	 }
+	    	 .container {
+		    	 	margin: 0px 0px;
+					padding: 0 10px;
+	    	 }
 
-    	 div {
-    	 		
-    	 }
+	    	 .logo {
+		    	 	padding-top: 0px;
+		    	 	margin-top: 0px;
+		    	 	width: 170px;
+		    	 	height: 43px;
+		    	 	margin-bottom: 0px;
+	    	 }
 
-    	 .logo {
-	    	 	padding-top: 0px;
-	    	 	margin-top: 0px;
-	    	 	width: 170px;
-	    	 	height: 43px;
-	    	 	margin-bottom: 0px;
-    	 }
-    	 .inside-column {
-    	 	padding-right: auto;
-    	 	padding-left: auto;
-    	 	width: 100%;
-    	 }
-    	 
-    	 #column1 {
-    	 		margin-top: 10px;
-				color: #a19f9e;
-				font-family: georgia;
-				font-size: 13px;
-				line-height: 21px;
-				text-align: left;
-				overflow: hidden;
-				padding-right: 15px;
-				float: left; 
-				width: 30%;
-				padding-left: 10px;
-				padding-right: 15px;
-			}
-
-		#column2 {
-				margin-top: 10px;
-				color: #a19f9e;
-				font-family: georgia;
-				font-size: 13px;
-				line-height: 21px;
-				text-align: left;
-				overflow: hidden;
-				padding-right: 15px;
-				border-left: 1px solid #a19f9e;
-				border-right: 1px solid #a19f9e;
-				float: left;
-				color: #1b6e97;
-				width: 30%;
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-
-		#column3 {
-				margin-top: 10px;
-				color: #a19f9e;
-				font-family: georgia;
-				font-size: 13px;
-				line-height: 21px;
-				text-align: left;
-				overflow: hidden;
-				float: left; 
-				width: 30%;
-				padding-left: 15px;
-				padding-right: 15px; 
+	    	 .inside-column {
+	    	 	padding-right: auto;
+	    	 	padding-left: auto;
+	    	 	width: 100%;
+	    	 }
+	    	 
+	    	 #column1 {
+	    	 		margin-top: 10px;
+					color: #a19f9e;
+					font-family: georgia;
+					font-size: 13px;
+					line-height: 21px;
+					text-align: left;
+					overflow: hidden;
+					padding-right: 15px;
+					float: left; 
+					width: 30%;
+					padding-left: 10px;
+					padding-right: 15px;
 				}
 
-		p {
-			margin-top: 0px;
-		}
+			#column2 {
+					margin-top: 10px;
+					color: #a19f9e;
+					font-family: georgia;
+					font-size: 13px;
+					line-height: 21px;
+					text-align: left;
+					overflow: hidden;
+					padding-right: 15px;
+					border-left: 1px solid #a19f9e;
+					border-right: 1px solid #a19f9e;
+					float: left;
+					color: #1b6e97;
+					width: 30%;
+					padding-left: 15px;
+					padding-right: 15px;
+				}
 
-    	 .navigation {
-	    	 	text-align: center;
-	    	 	-webkit-margin-before: 1em;
-				-webkit-margin-after: 1em;
-				-webkit-margin-start: 0px;
-				-webkit-margin-end: 0px;
-				-webkit-padding-start: 40px;
-				font-size: 10px;
-    	 }
+			#column3 {
+					margin-top: 10px;
+					color: #a19f9e;
+					font-family: georgia;
+					font-size: 13px;
+					line-height: 21px;
+					text-align: left;
+					overflow: hidden;
+					float: left; 
+					width: 30%;
+					padding-left: 15px;
+					padding-right: 15px; 
+					}
 
-    	 /* unvisited link */
-		a:link {
-		    color: black;
-		    text-decoration: none;
-		}
+			p {
+				margin-top: 0px;
+			}
 
-		/* visited link */
-		a:visited {
-		    color: black;
-		    text-decoration: none;
-		}
+	    	 .navigation {
+		    	 	text-align: center;
+		    	 	-webkit-margin-before: 1em;
+					-webkit-margin-after: 1em;
+					-webkit-margin-start: 0px;
+					-webkit-margin-end: 0px;
+					-webkit-padding-start: 40px;
+					font-size: 10px;
+	    	 }
 
-		/* mouse over link */
-		a:hover {
-		    color: red;
-		    text-decoration: none;
-		}
+	    	 /* unvisited link */
+			a:link {
+			    color: black;
+			    text-decoration: none;
+			}
 
-		/* selected link */
-		a:active {
-		    color: red;
-		    text-decoration: none;
-		}
+			/* visited link */
+			a:visited {
+			    color: black;
+			    text-decoration: none;
+			}
 
-		 /* Navigation */
-		.navigation-portal {
-			display: inline-block;
-			vertical-align: bottom;
-			margin: 0px;
-			padding: 0px;
-		}
+			/* mouse over link */
+			a:hover {
+			    color: red;
+			    text-decoration: none;
+			}
 
-		#overall-navigation {
-			position: fixed;
-			bottom: 10;
-			right: 10;
-		}
+			/* selected link */
+			a:active {
+			    color: red;
+			    text-decoration: none;
+			}
 
-		.navigation {
-			position: relative;
-			border: solid 1 black;
-			box-shadow: 4px 4px 4px #909090;
-			background-color: white;
-			width: 77px;	
-		}
+			 /* Navigation */
+			.navigation-portal {
+				display: inline-block;
+				vertical-align: bottom;
+				margin: 0px;
+				padding: 0px;
+			}
 
-		.navigation:hover {
-			position: relative;
-			border: solid 1 black;
-			box-shadow: 4px 4px 4px pink;
-		}
+			#overall-navigation {
+				position: fixed;
+				bottom: 10;
+				right: 10;
+			}
 
+			.navigation2 {
+				position: relative;
+				border: solid 1 black;
+				box-shadow: 4px 4px 4px #909090;
+				background-color: white;
+				width: 77px;	
+			}
 
+			.navigation:hover {
+				position: relative;
+				border: solid 1 black;
+				box-shadow: 4px 4px 4px pink;
+			}
    	</style>
   </head>
 
   <body>
 
   		<div id="overall-navigation">
-	  	<div class="navigation">
+	  	<div class="navigation2">
 	  		<div class="navigation-portal">
 				<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/34.html">
 				<img src="Images/Navigation-05.jpg" height="35">
