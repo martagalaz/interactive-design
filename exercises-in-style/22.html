@@ -12,74 +12,124 @@
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: bold;
-}
+	}
 
 
-div{
-	float: left;
-	width: 280px;
-	padding-right: 1em;
-	padding-left: 1em;
-	padding-bottom: 1em;
-	padding-top: 0px;
-	
-}
+	div{
+		float: left;
+		width: 280px;
+		padding-right: 1em;
+		padding-left: 1em;
+		padding-bottom: 1em;
+		padding-top: 0px;
+		
+	}
 
-.special {
-	background-color: #0000FF;
-}
+	.special {
+		background-color: #0000FF;
+	}
 
-p {	
-	width: 280px;
-	float: left;
-	padding: 15px;
-	text-align: left;
-	margin-top: 0;
-	margin-bottom: 0;
-	position: relative;
-	color: white;
-}
+	p {	
+		width: 280px;
+		float: left;
+		padding: 15px;
+		text-align: left;
+		margin-top: 0;
+		margin-bottom: 0;
+		position: relative;
+		color: white;
+	}
 
-h1 { 
-	padding-top: 10px;
-	text-align: right;
-	font-weight: 900px;
-	font-size: 21px;
-	line-height: 25px;
-	margin: 0;
-	position: absolute;
-}
+	h1 { 
+		padding-top: 10px;
+		text-align: right;
+		font-weight: 900px;
+		font-size: 21px;
+		line-height: 25px;
+		margin: 0;
+		position: absolute;
+	}
 
-img {
-	width: 200px;
-	-bottom: 40px;
-}
+	img {
+		width: 200px;
+		-bottom: 40px;
+	}
 
-/* unvisited link */
-a:link {
-    color: #0000FF;
-}
+	/* unvisited link */
+	a:link {
+	    color: #0000FF;
+	}
 
-/* visited link */
-a:visited {
-    color: #0000FF;
-}
+	/* visited link */
+	a:visited {
+	    color: #0000FF;
+	}
 
-/* mouse over link */
-a:hover {
-    color: white;
-}
+	/* mouse over link */
+	a:hover {
+	    color: white;
+	}
 
-/* selected link */
-a:active {
-    color: white;
-}
+	/* selected link */
+	a:active {
+	    color: white;
+	}
+
+	/* Navigation */
+		.navigation-portal {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#overall-navigation {
+			position: fixed;
+			bottom: 10;
+			right: 10;
+		}
+
+		.navigation {
+			position: relative;
+			border: solid 1 black;
+			box-shadow: 4px 4px 4px #909090;
+			background-color: white;
+			width: 77px;	
+		}
+
+		.navigation:hover {
+			position: relative;
+			border: solid 1 black;
+			box-shadow: 4px 4px 4px pink;
+		}
 
 
     </style>
   </head>
 
   <body>
+
+  	<div id="overall-navigation">
+	  	<div class="navigation">
+	  		<div class="navigation-portal">
+				<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/21.html">
+				<img src="Images/Navigation-05.jpg" height="35">
+				</a>
+			</div>
+
+			<div class="navigation-portal">
+				<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/01.html">
+				<img src="Images/Navigation-04.jpg" height="35">
+				</a>
+			</div>
+
+			<div class="navigation-portal">
+				<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/index.html">
+				<img src="Images/Navigation-02.jpg" height="35">
+				</a>
+			</div> 
+  		</div>
+ 	</div>
 
   	<div> 
   		<h1><img src="Images/12.jpg"></h1>
