@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-div {
-    width: 370px;
-    height: 42px;
-    background: red;
-    position: relative;
-    left: 85px;
-    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-    animation-delay: 1s;
-    -webkit-animation: myfirst 10s linear 10s infinite alternate; /* Chrome, Safari, Opera */
-    animation: myfirst 10s linear 10s infinite alternate 
-}
+    <title>Froth on the Daydream</title>
+    <style> 
 
-h1 {
+        body {
+           /* width: 1000px;*/
+        }
+
+        .overall {
+            position: relative;
+        }
+
+        .main {
+            width: 370px;
+            height: 42px;
+            background: red;
+            position: relative;
+            left: 85px;
+            -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+            animation-delay: 1s;
+            -webkit-animation: myfirst 10s linear 10s infinite alternate; /* Chrome, Safari, Opera */
+            animation: myfirst 10s linear 10s infinite alternate 
+        }
+
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes myfirst {
+                0%   {background:red; top:0px;}
+                25%  {background:black; top:130px;}
+                50%  {background:red; top:400px;}
+                75%  {background:black; top:130px;}
+                100% {background:red; top:0px;}
+            }
+
+            /* Standard syntax */
+            @keyframes myfirst {
+                0%   {background:red; top:0px;}
+                25%  {background:black;  top:130px;}
+                50%  {background:red; top:400px;}
+                75%  {background:black; top:130px;}
+                100% {background:red; top:0px;}
+            }
+
+        h1 {
             font-family: helvetica;
             text-decoration: underline;
             margin: 20px;
         }
 
-        /* Chrome, Safari, Opera */
-        @-webkit-keyframes myfirst {
-            0%   {background:red; top:0px;}
-            25%  {background:black; top:130px;}
-            50%  {background:red; top:400px;}
-            75%  {background:black; top:130px;}
-            100% {background:red; top:0px;}
-        }
+            /* Navigation */
+            .navigation-portal {
+                display: inline-block;
+                vertical-align: bottom;
+                margin: 0px;
+                padding: 0px;
+                z-index: 1;
+            }
 
-        /* Standard syntax */
-        @keyframes myfirst {
-            0%   {background:red; top:0px;}
-            25%  {background:black;  top:130px;}
-            50%  {background:red; top:400px;}
-            75%  {background:black; top:130px;}
-            100% {background:red; top:0px;}
-        }
+            #overall-navigation {
+                position: fixed;
+                bottom: 10;
+                right: 10;
+            }
 
-        /* Navigation */
-        .navigation-portal {
-            display: inline-block;
-            vertical-align: bottom;
-            margin: 0px;
-            padding: 0px;
-        }
+            .navigation {
+                position: relative;
+                border: solid 1 black;
+                box-shadow: 4px 4px 4px #909090;
+                background-color: white;
+                width: 77px;    
+            }
 
-        #overall-navigation {
-            position: fixed;
-            bottom: 10;
-            right: 10;
-        }
+            .navigation:hover {
+                position: relative;
+                border: solid 1 black;
+                box-shadow: 4px 4px 4px pink;
+            }
 
-        .navigation {
-            position: relative;
-            border: solid 1 black;
-            box-shadow: 4px 4px 4px #909090;
-            background-color: white;
-            width: 77px;    
-        }
-
-        .navigation:hover {
-            position: relative;
-            border: solid 1 black;
-            box-shadow: 4px 4px 4px pink;
-        }
-</style>
+    </style>
 </head>
+
 <body>
 
     <div id="overall-navigation">
@@ -91,11 +104,19 @@ h1 {
         </div>
     </div>
 
-<a href="18.html"><div></div></a>
+    <div class="overall">
 
-<aside>
-        <h1>&nbsp;&nbsp;&nbsp;<sup>H</sup><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>E</sup><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>L</sup><br><br>&nbsp;&nbsp;&nbsp;<sup>L</sup><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>0</sup></h1>
-    </aside>
+        <div class="main">
+                <a href="18.html">
+                    <div></div>
+                </a>
+        </div>
+
+        <aside>
+            <h1>&nbsp;&nbsp;&nbsp;<sup>R</sup><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>E</sup><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>A</sup><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>D</sup></h1>
+        </aside>
+
+    </div>
 
 </body>
 </html>
