@@ -1,53 +1,101 @@
-<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Froth on the Daydream</title>
 
-<head>
-	<title>How-To</Title>
-	<style>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 
-		body {
-		height: 5000px;
-		top: 10;
-		}
+    <style>
 
-		h1 {
-			font-family: helvetica;
-			right: 0;
-			bottom: 0;
-			font-size: 40px;
-			color: white;
-			padding: 4px;
-			position: fixed;
-			background-color: black;
-			z-index: -1;
+    @font-face {
+    font-family: 'helvetica_condensed_lightRg';
+    src: url('Fonts/Helvetica-Condensed-Light-webfont.eot');
+    src: url('Fonts/Helvetica-Condensed-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Helvetica-Condensed-Light-webfont.woff2') format('woff2'),
+         url('Fonts/Helvetica-Condensed-Light-webfont.woff') format('woff'),
+         url('Fonts/Helvetica-Condensed-Light-webfont.ttf') format('truetype'),
+         url('Fonts/Helvetica-Condensed-Light-webfont.svg#helvetica_condensed_lightRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-		}
-		.container {
-			width: 660px;
-			margin: 0 auto;
-			background-color: yellow;
-		}
+}
 
-		.overall-container {
-			position: relative;
-			height: 5000px;
-			z-index: -2;
-		}
+    body {
+	    -webkit-font-smoothing: antialiased !important;
+	    color: #000000;
+		height: 100%;
+		max-width: 100%;
 
-		.how-to-portal {
-			display: inline-block;
-			vertical-align: bottom;
-			width: 200px;
-			height: 200px;
-			margin: 8px;
-			}
+	}
 
-		img {
-			max-width: 100%;
-		}
+	.standout{
+		font-weight: bold;
+	}
+
+	#main-text { font-size: 12px;
+		max-width: 100%;
+		padding: 10px;
+		text-align: left;
+		margin-top: 0;
+		margin-bottom: 18px;
+		left: 0;
+	}
+
+	.container {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+	}
+
+	.header {
+		height: 100%;
+		/*padding: 18px;*/
+		height: 180px;
+		/*margin-left: 10px;
+		margin-right: 13px;*/
+		margin-top: 120px;
+		font-family: 'helvetica_condensed_lightRg', sans-serif;
+		text-transform: uppercase;
+		font-size: 60px;
+		line-height: 80px;
+		color: white;
+		background-color: red;
+		-webkit-transform: rotateZ(-90deg);
+        -ms-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
 
 
+	}
 
-			/* Navigation */
+	.main {
+		font-family: helvetica, sans-serif;
+		line-height: 16px;
+		max-width: 100%;
+		padding-left: 10px;
+		padding-right: 20px;
+		padding-top: 10px;
+	}
+
+	.title { 
+		font-family: 'helvetica_condensed_lightRg', sans-serif;
+		font-size: 60px;
+		line-height: 80px;
+		text-align: center;
+		padding-top: 4px;
+		padding-bottom: 20px;
+		/*padding-left: 10px;
+		padding-top: 20px;*/
+		z-index: 2;
+	}
+
+	p {
+		margin-left: 10px;
+	}
+
+
+	/* Navigation */
 		.navigation-portal {
 			display: inline-block;
 			vertical-align: bottom;
@@ -75,22 +123,47 @@
 			box-shadow: 4px 4px 4px #D3D3D3;
 		}
 
+		    	/* unvisited link */
+		a:link {
+		    color: black;
+		    text-decoration: none;
+		}
+
+		/* visited link */
+		a:visited {
+		    color: black;
+		    text-decoration: none;
+		}
+
+		/* mouse over link */
+		a:hover {
+		    color: red;
+		    text-decoration: none;
+		}
+
+		/* selected link */
+		a:active {
+		    color: red;
+		    text-decoration: none;
+		}
 		
-	</style>
-</head>
 
-<body>
+    </style>
 
-	<div id="overall-navigation">
+  </head>
+
+  <body>
+
+  	 	<div id="overall-navigation">
 	  	<div class="navigation">
 	  		<div class="navigation-portal">
-				<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/40.html">
+				<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/36.html">
 				<img src="Images/Navigation-05.jpg" height="35">
 				</a>
 			</div>
 
 			<div class="navigation-portal">
-				<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/26.html">
+				<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/28.html">
 				<img src="Images/Navigation-04.jpg" height="35">
 				</a>
 			</div>
@@ -103,136 +176,16 @@
   		</div>
  	</div>
 
-	<div class="overall-container">
+  	<div class="container">
+	  	<div class="title">
+	  		<a href="http://martagalaz.github.io/interactive-design/exercises-in-style/29.html">C<sup>O</sup>LL<sup>I</sup>N + <sup>∅</sup></a>
+		</div>
 
-	<div class="container">
-	
 
-	<div class="how-to-portal">
-		<a href="http://cindyhwang.github.io/interactive-design/HowToActSad/index.html">
-		1
-		</a>
+		<div class="header"> 
+			<p>By Boris Vian</p>
+		</div>
 	</div>
 
-		<div class="how-to-portal">
-		<a href="http://lauraanncoombs.github.io/yale_interactive_design/Wikihow/WikiHow2.html">
-		2
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://lianfumerton-liu.github.io/interactive-design/HowTo/HowTo.html">
-		3
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://bobbydresser.com/interactive-design/howto.html">
-		4
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://chasebooker.github.io/interactive-design/wh/index.html">
-		5
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://martagalaz.github.io/interactive-design/wikihow/index">
-		6
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://waldendavis.github.io/interactive-design/howto.html">
-		7
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://carrchadwick.github.io/interactive_design/wikihow/">
-		8
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://shoshigb.github.io/interactiveDesign/ART369%20WikiHow/index.html">
-		9
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://mariahxu.github.io/interactive-design/Cookies.html">
-		10
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://kaideas.github.io/interactive/fax/index.html">
-		11
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://teddymathias.github.io/interactive-design/how/">
-		12
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://mkvalentine.github.io/interactiveDesign/Stop_A_Wedding/index.html">
-		13
-		</a>
-	</div>
-
-		<div class="how-to-portal">
-		<a href="http://mkvalentine.github.io/interactiveDesign/Stop_A_Wedding/index.html">
-		14
-		</a>
-	</div>
-
-	<div class="how-to-portal">
-		<a href="http://mkvalentine.github.io/interactiveDesign/Stop_A_Wedding/index.html">
-		15
-		</a>
-	</div>
-
-	<div class="how-to-portal">
-		<a href="http://mkvalentine.github.io/interactiveDesign/Stop_A_Wedding/index.html">
-		16
-		</a>
-	</div>
-
-	<div class="how-to-portal">
-		<a href="http://mkvalentine.github.io/interactiveDesign/Stop_A_Wedding/index.html">
-		17
-		</a>
-	</div>
-
-	<div class="how-to-portal">
-		<a href="http://mkvalentine.github.io/interactiveDesign/Stop_A_Wedding/index.html">
-		18
-		</a>
-	</div>
-
-	<div class="how-to-portal">
-		<a href="http://mkvalentine.github.io/interactiveDesign/Stop_A_Wedding/index.html">
-		19
-		</a>
-	</div>
-
-	<div class="how-to-portal">
-		<a href="http://mkvalentine.github.io/interactiveDesign/Stop_A_Wedding/index.html">
-		20
-		</a>
-	</div>
-
-</div>
-
-
-  </div>
-
-</body>
-
+	  </body>
 </html>
