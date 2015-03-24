@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Responsive Cat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <style>
+  
+  body { background: pink; }
+  img { position:absolute; bottom: 0; max-width: 100%; height: auto; margin-right: auto; margin-left: auto;}
+    #secondstage {display: none;}
+    #thirdstage {display: none;}
+    #fourthstage {display: none;}
+
+  @media screen and (max-width: 1024px) {
+    #firststage {display: none;}
+    #secondstage {display: block;}
+    #thirdstage {display: none;}
+    #fourthstage {display: none;}
+  }
+
+  @media screen and (max-width: 768px) {
+  #firststage {display: none;}
+    #secondstage {display: none;}
+    #thirdstage {display: block;}
+    #fourthstage {display: none;}
+  
+  }
+
+  @media screen and (max-width: 600px) {
+  #firststage {display: none;}
+    #secondstage {display: none;}
+    #thirdstage {display: none;}
+    #fourthstage {display: block;}
+  }
+
+  @media screen and (max-width: 480px) {
+ #secondstage {display: none;}
+    #thirdstage {display: none;}
+    #fourthstage {display: none;}
+
+  }
+
+  @media screen and (max-width: 320px) {
+    #firststage {display: none;}
+    #secondstage {display: none;}
+    #thirdstage {display: none;}
+  }
+ 
+  </style>
+
+</head>
+
+<body> 
+         
+
+  <div id="firststage"><img src="images/01.png"></div>  
+  <div id="secondstage"><img src="images/02.png"></div>  
+  <div id="thirdstage"><img src="images/03.png"></div>  
+    <div id="fourthstage"><img src="images/04.png"></div> 
+ 
+
+</body>
+
+</html>
