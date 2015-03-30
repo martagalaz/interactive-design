@@ -1,0 +1,227 @@
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Light Show</title>
+    <style>
+
+      @font-face {
+      font-family: 'fonts/raisonnedemibold';
+      src: url('fonts/Raisonne_Demibold-webfont.eot');
+      src: url('fonts/Raisonne_Demibold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/Raisonne_Demibold-webfont.woff2') format('woff2'),
+           url('fonts/Raisonne_Demibold-webfont.woff') format('woff'),
+           url('fonts/Raisonne_Demibold-webfont.ttf') format('truetype'),
+           url('fonts/Raisonne_Demibold-webfont.svg#raisonnedemibold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
+    body  {
+      -webkit-font-smoothing: antialiased !important;
+  		background-image: url("Images/windows.gif");
+      background-repeat: repeat;
+  		height: 1000000px;
+  		padding: 0px;
+  		font-size: 14px;
+  		line-height: 1.4;
+      font-family: 'fonts/raisonnedemibold';
+	}
+
+    .explanation {
+      margin: 0 auto;
+      margin-top: 60px;
+      width: 600px;
+      color: white;
+      font-size: 15pt;
+      text-align: left;
+      padding: 20px;
+    }
+
+
+	#arrow {
+		position: fixed;
+		bottom: 10;
+		left: 10;
+	}
+
+	#arrowimage {
+		width: 50px;
+		height: 43px;
+	}
+
+	/*Interactive*/
+
+	@media screen and (max-width: 1024px) {
+	}
+
+	@media screen and (max-width: 768px) {
+	}
+
+	@media screen and (max-width: 600px) {
+	}
+
+	@media screen and (max-width: 480px) {
+	}
+
+	@media screen and (max-width: 320px) {
+	}
+
+
+	/*Navigation*/
+
+	a {
+    color: white;
+    text-decoration: none;
+  	}
+
+  #container {
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-right: 0;
+    height: 100px;
+  }
+
+  #large-nav .nav-item {
+    background: whites;
+    z-index: 7;
+    margin-right: 0;
+  }
+
+  #fixed-nav .nav-item {
+    height: 40px;
+  }
+
+  .nav-item {
+    padding-top: 12px;
+    float: right;
+    width: 8%;
+    text-align: center;
+    font-size: 16px;
+    height: 100px;
+    letter-spacing: 1px;
+  }
+
+  .nav-item.paom .title img {
+    width: 87px;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .nav-item.last {
+    border-right: 0;
+  }
+
+  .nav-item .icon {
+    padding: 36px 0 8px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -14px;
+  }
+
+  .nav-item .title,
+  .nav-item .icon {
+  	color: white;
+    transition: all .15s ease-in-out;
+  }
+
+  .nav-item:hover {
+  	color: white;
+  }
+
+  img {
+		width: 90px;
+		height: 90px;
+	}
+
+  img:hover {
+		width: 95px;
+		height: 95px;
+	}
+
+  @media screen and (max-width: 1220px) {
+    #container {
+      border: 0;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .nav-item {
+      width: 33.333333%;
+    }
+
+    .nav-item.third {
+      border-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    .nav-item .icon {
+      display: none;
+    }
+
+    .nav-item {
+      float: none;
+      height: auto;
+      display: block;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid black;
+    }
+
+    .nav-item .title {
+      padding-bottom: 12px;
+    }
+
+    .nav-item:hover .title {
+      margin: 0;
+    }
+  }
+
+	</style>
+	</head>
+
+	<body>
+
+		
+
+		<div id="arrow">
+			<img id="arrowimage" src="Images/arrow.svg">
+		</div>
+
+
+		<div id="container">
+
+		  	<div class="header">
+			<div id="large-nav">
+
+
+		      <a href="x" class="nav-item third">
+		      		<div class="icon">
+	          	<img src="Images/it.svg">
+	        	</div>
+		        <div class="title">It</div>
+		      </a>
+
+		      <a href="invited.html" class="nav-item">
+		      	<div class="icon">
+	          	<img class="nav" src="Images/invited.svg">
+	        	</div>
+		        <div class="title">You</div>
+		      </a>
+
+
+		    </div>
+		  </div>
+
+		</div>
+
+    <div class="explanation">
+    5 Pixels = 1 window in Manhattan <br>
+    20,700.000 total
+    </div>
+		
+	</body>
+
+</html>
