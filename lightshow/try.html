@@ -4,18 +4,18 @@
 <title>Javascript animation: Demo 1</title>
 <style type="text/css">
 
-@font-face {
-      font-family: 'fonts/raisonnedemibold';
-      src: url('fonts/Raisonne_Demibold-webfont.eot');
-      src: url('fonts/Raisonne_Demibold-webfont.eot?#iefix') format('embedded-opentype'),
-           url('fonts/Raisonne_Demibold-webfont.woff2') format('woff2'),
-           url('fonts/Raisonne_Demibold-webfont.woff') format('woff'),
-           url('fonts/Raisonne_Demibold-webfont.ttf') format('truetype'),
-           url('fonts/Raisonne_Demibold-webfont.svg#raisonnedemibold') format('svg');
-      font-weight: normal;
-      font-style: normal;
+    @font-face {
+          font-family: 'fonts/raisonnedemibold';
+          src: url('fonts/Raisonne_Demibold-webfont.eot');
+          src: url('fonts/Raisonne_Demibold-webfont.eot?#iefix') format('embedded-opentype'),
+               url('fonts/Raisonne_Demibold-webfont.woff2') format('woff2'),
+               url('fonts/Raisonne_Demibold-webfont.woff') format('woff'),
+               url('fonts/Raisonne_Demibold-webfont.ttf') format('truetype'),
+               url('fonts/Raisonne_Demibold-webfont.svg#raisonnedemibold') format('svg');
+          font-weight: normal;
+          font-style: normal;
 
-  }
+      }
 
     body  {
       -webkit-font-smoothing: antialiased !important;
@@ -45,22 +45,22 @@
     margin-top: 5px;
     width: 600px;
     color: black;
-    font-size: 30pt;
+    font-size: 25pt;
     text-align: left;
     padding: 20px;
      z-index: -1;
     }
 
 
-#fooObject {
- /* simple box */
- position:absolute;
- left:100px;
- top: 800px;
- white-space:nowrap;
-   z-index: 1;
+  #fooObject {
+   /* simple box */
+   position:absolute;
+   left:100px;
+   top: 800px;
+   white-space:nowrap;
+     z-index: 1;
 
-}
+  }
 
   /*Navigation*/
 
@@ -132,7 +132,6 @@
   }
 
 
-
   img:hover {
     width: 95px;
     height: 95px;
@@ -140,9 +139,9 @@
 
   #wrapper {
     margin-left: 10px;
-  }
+   }
 
-  @media screen and (max-width: 1220px) {
+   @media screen and (max-width: 1220px) {
 
     body {
     height: 8770px;
@@ -159,7 +158,7 @@
     #container {
       border: 0;
     }
-  }
+   }
    
     @media screen and (max-width: 900px) {
 
@@ -179,7 +178,7 @@
       width: 14%;
     }
 
-  @media screen and (max-width: 620px) {
+    @media screen and (max-width: 620px) {
 
     body {
     height: 17258px;
@@ -219,29 +218,30 @@
 }
 
 </style>
+
 <script type="text/javascript">
 
 
-var foo = null; // object
+  var foo = null; // object
 
-function doMove() {
-  foo.style.top = parseInt(foo.style.top)-1+'px';
-  setTimeout(doMove,1); // call doMove in 90msec
-}
+  function doMove() {
+    foo.style.top = parseInt(foo.style.top)-1+'px';
+    setTimeout(doMove,1); // call doMove in 90msec
+  }
 
-function init() {
-  foo = document.getElementById('fooObject'); // get the "foo" object
-  foo.style.top = '600px'; // set its initial position to 0px
-  doMove(); // start animating
-}
+  function init() {
+    foo = document.getElementById('fooObject'); // get the "foo" object
+    foo.style.top = '-600px'; // set its initial position to 0px
+    doMove(); // start animating
+  }
 
-window.onload = init;
+  window.onload = init;
 
-</script>
+  </script>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
   <a id="top">
     </a>
@@ -272,37 +272,46 @@ window.onload = init;
             <div class="title">You</div>
           </a>
         </div>
-
         </div>
       </div>
 
-       <div id="fooObject">
-    <img class="firefly" src="Images/light_on.jpg" >
-    </div>
+      <div id="fooObject">
+          <img class="firefly" src="Images/light_on.jpg" >
+      </div>
+
     </div>
 
 
-   <div class="explanation">
-    
+    <div class="explanation">
+     
       <p><span class"highlight"> 
+      <p> You Glow, It Talks </p>
 
-      <p>It Glows, It Talks</p>
+      <u>You</u> are invited to it</p></span>
 
-      <u>You</u> are invited&mdash;<br>October 31st, 2017 at midnight</p></span>
+      <span class"highlight"> October 32st, 2017</p></span>
 
-      <p>It glows, It Talks is a one-time <br> night lighting performance <br>in <span class"highlight">New York City,</span> by the people <br> of New York City.</p>
+      <p>It glows, it talks is a one-time <br> night lighting and performance in <span class"highlight">New York City,</span> by the people <br> of New York City. 
 
-      <p>Each window flashes in a pattern that is unique to itself. <br> Each blinking pattern is its own optical signal, as well as part of an overall ritual of the Manhattan window species.</p>
 
-      <p>Best experienced from the Brooklyn Heights Promenade, Manhattan's windows <br> will become performants <br> in this skyline&mdash;or environment&mdash;of blinking patterns <br> that explore and reflect <br> the human experience amidst the urban landscape.</p>
+      Seen from the Brooklyn Heights Promenade, the project turns each window into a performant. </p>
 
-      <p>All participating buildings <br> will receive guide sheets with instructions to each resident <br> on when to turn their lights on.</p>
+      <p>The event will happen once a month at midnight, for the year of 2016—12 shows in all. For each 30 minute performance, a musician and visual artist collaborate together. A total of 24 light and sound artists will participate. </p>
+      
+      <p> animate the New York City sky.</p>
+
+      <p>The participating buildings receive a guide sheet for each floor, with instructions how when to turn on and off their lights. Each choreography is </p>
+
+      <p>The sound composition is created in tandem with the light performance, and as a response to the city’s soundscape. Light and sound come together to respond to New York City’s life and its people—how will they exist in the real, material world?</p>
+
+      <p>It Glows, It Talks relies on the intersection of light and sound to provide an augmented—or diminished?—reality of New York’s city and soundscape. By re-imagining its iconic skyline, we hope to enhance your current experience and perception of the city.</p>
+
+      <p>There will be no official recording of the event. It is important to see this one-of-a-kind experience immersed in the New York City environment. The light performance will blend itself with the city’s usual lighting and the sound composition will do the same with the city’s soundscape. Each resident of New York will inevitably participate in the event, through acts as simple as turning on a bedroom light. </p>
 
 
       <p>We want to thank our financial and technical sponsors in contributing to this one-of-a-kind New York City commemoration. </p>
 
       <p>The event is public. </p>
-  </P>
 
     </div>    
     </div>
