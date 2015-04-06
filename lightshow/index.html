@@ -24,7 +24,8 @@
   		height: 1000000px;
   		padding: 0px;
   		font-size: 14px;
-  		line-height: 1.4;
+  		line-height: 1.5;
+      letter-spacing: 0.5px;
       font-family: 'fonts/raisonnedemibold';
 	 }
 
@@ -139,6 +140,10 @@
     visibility: hidden;
     }
 
+    body {
+    height: 8770px;
+    }
+
     #wrapper:hover .title {
     visibility: visible;
     }
@@ -150,6 +155,9 @@
    
     @media screen and (max-width: 900px) {
 
+    body {
+    height: 11888px;
+    }
 
     #wrapper .title {
     visibility: hidden;
@@ -163,7 +171,11 @@
       width: 14%;
     }
 
-  @media screen and (max-width: 620px) {
+    @media screen and (max-width: 620px) {
+
+    body {
+    height: 17258px;
+    }
 
     #wrapper .title {
     visibility: visible;
@@ -179,11 +191,12 @@
       display: block;
       width: 100%;
       border: 0;
-      border-bottom: 0.5px solid white;
+      border-bottom: 1px dotted white;
     }
 
     .nav-item .title {
-      padding-bottom: 12px;
+      padding-bottom: 20px;
+      padding-top: 5px;
     }
 
     .nav-item:hover .title {
@@ -234,8 +247,8 @@
 		</div>
 
     <div class="explanation">
-    5 pixels = 1 window in Manhattan <br>
-    10,700.000 windows total
+    1 pixel = 1 window in Manhattan <br>
+    10,700,000 windows total
     </div>
 
     <audio autoplay loop>
