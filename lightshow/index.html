@@ -15,8 +15,7 @@
            url('fonts/Raisonne_Demibold-webfont.svg#raisonnedemibold') format('svg');
       font-weight: normal;
       font-style: normal;
-
-  }
+    }
 
     body  {
       -webkit-font-smoothing: antialiased !important;
@@ -27,7 +26,7 @@
   		font-size: 14px;
   		line-height: 1.4;
       font-family: 'fonts/raisonnedemibold';
-	}
+	 }
 
     .explanation {
       margin: 0 auto;
@@ -39,54 +38,31 @@
       padding: 20px;
     }
 
-
-	#arrow {
+	 #arrow {
 		position: fixed;
 		bottom: 10;
 		left: 10;
-	}
+	 }
 
 	#arrowimage {
 		width: 50px;
 		height: 43px;
-	}
-
-	/*Interactive*/
-
-	@media screen and (max-width: 1024px) {
-	}
-
-	@media screen and (max-width: 768px) {
-	}
-
-	@media screen and (max-width: 600px) {
-	}
-
-	@media screen and (max-width: 480px) {
-	}
-
-	@media screen and (max-width: 320px) {
-	}
-
+	 }
 
 	/*Navigation*/
 
 	a {
     color: white;
     text-decoration: none;
-  	}
+  }
 
   #container {
-    max-width: 1220px;
     margin: 0 auto;
-    margin-right: 0;
     height: 100px;
   }
 
   #large-nav .nav-item {
-    background: whites;
     z-index: 7;
-    margin-right: 0;
   }
 
   #fixed-nav .nav-item {
@@ -96,7 +72,7 @@
   .nav-item {
     padding-top: 12px;
     float: right;
-    width: 8%;
+    width: 10%;
     text-align: center;
     font-size: 16px;
     height: 100px;
@@ -120,9 +96,21 @@
     margin-top: -14px;
   }
 
-  .nav-item .title,
+  .nav-item .title {
+    color: white;
+    font-size: 15pt;
+  }
+
+  #wrapper .title {
+    visibility: hidden;
+  }
+
+  #wrapper:hover .title {
+    visibility: visible;
+  }
+
   .nav-item .icon {
-  	color: black;
+  	color: white;
     transition: all .15s ease-in-out;
   }
 
@@ -131,8 +119,8 @@
   }
 
   img {
-		width: 90px;
-		height: 90px;
+		width: 100px;
+		height: 100px;
 	}
 
   img:hover {
@@ -140,23 +128,47 @@
 		height: 95px;
 	}
 
+  #wrapper {
+    margin-left: 10px;
+  }
+
   @media screen and (max-width: 1220px) {
+
+
+    #wrapper .title {
+    visibility: hidden;
+    }
+
+    #wrapper:hover .title {
+    visibility: visible;
+    }
+
     #container {
       border: 0;
     }
   }
+   
+    @media screen and (max-width: 900px) {
 
-  @media screen and (max-width: 900px) {
+
+    #wrapper .title {
+    visibility: hidden;
+    }
+
+    #wrapper:hover .title {
+    visibility: visible;
+    }
+
     .nav-item {
-      width: 33.333333%;
+      width: 14%;
     }
 
-    .nav-item.third {
-      border-right: 0;
-    }
-  }
+  @media screen and (max-width: 620px) {
 
-  @media screen and (max-width: 560px) {
+    #wrapper .title {
+    visibility: visible;
+    }
+
     .nav-item .icon {
       display: none;
     }
@@ -167,7 +179,7 @@
       display: block;
       width: 100%;
       border: 0;
-      border-bottom: 1px solid black;
+      border-bottom: 0.5px solid white;
     }
 
     .nav-item .title {
@@ -197,20 +209,23 @@
 		  	<div class="header">
 			<div id="large-nav">
 
-
+        <div id="wrapper">
 		      <a href="index.html" class="nav-item third">
 		      		<div class="icon">
 	          	<img src="Images/it.svg">
 	        	</div>
 		        <div class="title">It</div>
 		      </a>
+        </div>
 
+        <div id="wrapper">
 		      <a href="invited.html" class="nav-item">
 		      	<div class="icon">
 	          	<img class="nav" src="Images/invited.svg">
 	        	</div>
 		        <div class="title">You</div>
 		      </a>
+        </div>
 
 
 		    </div>
@@ -219,12 +234,12 @@
 		</div>
 
     <div class="explanation">
-    5 Pixels = 1 window in Manhattan <br>
-    20,700.000 total
+    5 pixels = 1 window in Manhattan <br>
+    10,700.000 windows total
     </div>
 
     <audio autoplay loop>
-  <source src="hum.mp3" type="audio/mpeg">
+  <source src="fireflies.m4a" type="audio/mpeg">
 </audio>
 
  

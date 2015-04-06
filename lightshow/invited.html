@@ -28,15 +28,6 @@
 		font-family: 'fonts/raisonnedemibold';
 	}
 
-	#info {
-		top: 160;
-		left: 10;
-		color: white;
-		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
 	#arrow {
 		position: fixed;
 		bottom: 10;
@@ -52,54 +43,27 @@
 		margin: 0 auto;
 		margin-top: 5px;
 		width: 600px;
-    	color: black;
-    	font-size: 25pt;
-    	text-align: left;
-    	background-color: white;
-    	padding: 20px;
+    color: black;
+    font-size: 25pt;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
     }
+	
+  /*Navigation*/
 
-   .highlight {
-    	background-color: #FFF;
-    	color: white;
-    }
-
-	/*Interactive*/
-
-	@media screen and (max-width: 1024px) {
-	}
-
-	@media screen and (max-width: 768px) {
-	}
-
-	@media screen and (max-width: 600px) {
-	}
-
-	@media screen and (max-width: 480px) {
-	}
-
-	@media screen and (max-width: 320px) {
-	}
-
-
-	/*Navigation*/
-
-	a {
-    color: white;
+  a {
+    color: black;
     text-decoration: none;
-  	}
+    }
 
   #container {
-    max-width: 1220px;
     margin: 0 auto;
-    margin-right: 0;
     height: 100px;
   }
 
   #large-nav .nav-item {
-    background:white;
     z-index: 7;
-    margin-right: 0;
   }
 
   #fixed-nav .nav-item {
@@ -109,7 +73,7 @@
   .nav-item {
     padding-top: 12px;
     float: right;
-    width: 8%;
+    width: 10%;
     text-align: center;
     font-size: 16px;
     height: 100px;
@@ -119,7 +83,7 @@
   .nav-item.paom .title img {
     width: 87px;
     margin: 0 auto;
-    color: white;
+    color: black;
   }
 
   .nav-item.last {
@@ -133,43 +97,80 @@
     margin-top: -14px;
   }
 
-  .nav-item .title,
+  .nav-item .title {
+    color: black;
+    font-size: 15pt;
+  }
+
+  #wrapper .title {
+    visibility: hidden;
+  }
+
+  #wrapper:hover .title {
+    visibility: visible;
+  }
+
   .nav-item .icon {
-  	color: white;
+    color: white;
     transition: all .15s ease-in-out;
   }
 
   .nav-item:hover {
-  	color: white;
+    color: black;
+  }
+  
+ img {
+    width: 100px;
+    height: 100px;
   }
 
-  img {
-		width: 90px;
-		height: 90px;
-	}
 
   img:hover {
-		width: 95px;
-		height: 95px;
-	}
+    width: 95px;
+    height: 95px;
+  }
+
+  #wrapper {
+    margin-left: 10px;
+  }
 
   @media screen and (max-width: 1220px) {
+
+
+    #wrapper .title {
+    visibility: hidden;
+    }
+
+    #wrapper:hover .title {
+    visibility: visible;
+    }
+
     #container {
       border: 0;
     }
   }
+   
+    @media screen and (max-width: 900px) {
 
-  @media screen and (max-width: 900px) {
+
+    #wrapper .title {
+    visibility: hidden;
+    }
+
+    #wrapper:hover .title {
+    visibility: visible;
+    }
+
     .nav-item {
-      width: 33.333333%;
+      width: 14%;
     }
 
-    .nav-item.third {
-      border-right: 0;
-    }
-  }
+  @media screen and (max-width: 620px) {
 
-  @media screen and (max-width: 560px) {
+    #wrapper .title {
+    visibility: visible;
+    }
+
     .nav-item .icon {
       display: none;
     }
@@ -180,7 +181,7 @@
       display: block;
       width: 100%;
       border: 0;
-      border-bottom: 1px solid black;
+      border-bottom: 0.5px solid black;
     }
 
     .nav-item .title {
@@ -190,7 +191,6 @@
     .nav-item:hover .title {
       margin: 0;
     }
-   
   }
 
 	</style>
@@ -208,26 +208,26 @@
 
 		<div id="container">
 
-		  	<div class="header">
+		  		<div class="header">
 			<div id="large-nav">
 
-
+        <div id="wrapper">
 		      <a href="index.html" class="nav-item third">
 		      		<div class="icon">
 	          	<img src="Images/itblack.svg">
 	        	</div>
 		        <div class="title">It</div>
 		      </a>
+        </div>
 
+        <div id="wrapper">
 		      <a href="invited.html" class="nav-item">
 		      	<div class="icon">
 	          	<img class="nav" src="Images/invitedblack.svg">
 	        	</div>
 		        <div class="title">You</div>
 		      </a>
-
-		    </div>
-		  </div>
+        </div>
 
 		</div>
 
@@ -235,7 +235,7 @@
 			<h1>NIGHT HUM</h1>
 
 			<p><span class"highlight"> October 32st, 2017</p></span>
-			<p>She glows, she talks is a one-time <br> night lighting and sound performance in <span class"highlight"> New York City,</span> by the people <br> of New York City. Seen, and heard, from the Brooklyn Heights Promenade, the project turns the city's windows into a display surface for video projection. </p>
+			<p>It glows, it talks is a one-time <br> night lighting and sound performance in <span class"highlight"> New York City,</span> by the people <br> of New York City. Seen, and heard, from the Brooklyn Heights Promenade, the project turns the city's windows into a display surface for video projection. </p>
 
 			<p>The event will happen once a month at midnight, for the year of 2016—12 shows in all. For each 30 minute performance, a musician and visual artist collaborate together. A total of 24 light and sound artists will participate. </p>
 			
