@@ -1,0 +1,153 @@
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>It Glows, It Searches</title>
+    <style>
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+    img {
+    	width: 100px;
+    	height: 100px;
+    }
+ 	
+
+div#container {height:100%;width:100%;}
+
+div.a  {
+position:fixed;
+top:100px;
+left:200px; 
+
+  -webkit-animation: rotating 10s linear infinite;
+  -moz-animation: rotating 10s linear infinite;
+  -ms-animation: rotating 10s linear infinite;
+  -o-animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite;
+
+
+}
+
+div.b {
+position:fixed;
+top:500px;
+left:400px;
+
+-webkit-animation: rotating 3s linear infinite;
+  -moz-animation: rotating 3s linear infinite;
+  -ms-animation: rotating 3s linear infinite;
+  -o-animation: rotating 3s linear infinite;
+  animation: rotating 3s linear infinite;
+
+    
+}
+div.c {
+position:fixed;
+top:600px;
+left:50px; 
+    
+}
+
+div.d {
+position:fixed;
+top:10%;
+left:60%; 
+    
+}
+div.e {
+position:fixed;
+top:50px;
+left:10px; 
+    
+}
+
+div.f {
+position:fixed;
+    
+}
+
+div.g {
+position:fixed;
+    
+}
+div.h {
+position:fixed;
+    
+}
+div.i {
+position:fixed;
+    
+}
+div.j {
+position:fixed;
+    
+}
+div.k {
+position:fixed;
+    
+}
+
+    </style>
+
+	</head>
+
+	<body>
+<div id="container">
+	<div class='a rotating'><img src="images/itblack.svg"></div>
+    <div class='b rotating'><img  src="images/itblack.svg"></div>
+    <div class='c rotating'><img  src="images/itblack.svg"></div>
+    <div class='d rotating'><img  src="images/itblack.svg"></div>
+    <div class='e rotating'><img  src="images/itblack.svg"></div>
+    <div class='f rotating'><img  src="images/itblack.svg"></div>
+     <div class='g rotating'><img  src="images/itblack.svg"></div>
+    <div class='h rotating'><img  src="images/itblack.svg"></div>
+    <div class='i rotating'><img  src="images/itblack.svg"></div>
+    <div class='j rotating'><img  src="images/itblack.svg"></div>
+    <div class='k rotating'><img  src="images/itblack.svg"></div>
+    
+</div>
+	
+	          	
+	    
+	        
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bug.js"></script>
+
+	</body>
+
+	</html>
