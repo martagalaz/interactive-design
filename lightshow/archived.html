@@ -28,13 +28,66 @@
   body {
     -webkit-font-smoothing: antialiased !important;
      font-family: 'fonts/raisonnedemibold';
+     margin: 0px;
+  }
+
+  #arrow {
+    position: fixed;
+    top: 55%;
+    left: 61%;
+  }
+
+  .picture
+
+  { font-size: 12px;
+    color: #404040;
+    padding: 10px;
+    padding-top: 5px;
+    position: fixed;
+    top:160;
+    left: 300;
+    background-color: white;
+    border: 1 solid #404040;
+    z-index: 2;
+    visibility: hidden;
+    
+  }
+
+  #skyline {
+    width: 250px;
+  }
+
+   .explanation2:hover 
+    {
+    color: #404040;
+   }
+
+  .explanation2:hover .picture{
+    visibility: visible;
+
+  }
+
+  #circle {
+    width: 150px;
+
+  }
+
+  #arrow:hover {
+        -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+      filter: url(#drop-shadow);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+      filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    }
+   
+
+  .highlight {
   }
 
     .explanation {
     margin: 0 auto;
-    margin-top: -40px;
-    margin-left: 0px;
-    width: 1000px;
+    margin-top: -30px;
+    margin-left: 170px;
+    width: 700px;
     color: black;
     font-size: 50pt;
     text-align: left;
@@ -83,8 +136,6 @@
   }
 }
 
-
-   
 
   .nyc
   {margin: auto;}
@@ -800,19 +851,23 @@ left: 380px;
 
   @media screen and (max-width: 1220px) {
   	.explanation {
-  		width: 1000px;
+  		width: 700px;
   	}
   }
 
   @media screen and (max-width: 1000px) {
   	.explanation {
-  		width: 1000px;
+  		width: 500px;
   	}
   }
 
      @media screen and (max-width: 900px) {
      	.explanation {
-  		width: 750px;
+  		display: none; }
+
+     #arrow {
+    position: fixed;
+    margin: auto;
   	}
   }
 
@@ -821,8 +876,15 @@ left: 380px;
    	.explanation {
   		display: none;
   	}
+      #arrow {
+    position: fixed;
+    margin: auto;
+    margin-top: 0px;
+    }
 
    }
+
+
 
 
 
@@ -832,6 +894,14 @@ left: 380px;
 	</head>
 
 	<body>
+       <a href="index.html">      
+      <div id="arrow">
+        <img id="circle" src="images/circle.svg">
+      </div>
+    </a>
+
+
+  
 
 	<!-- <div class='nyc'>
 		<img src="images/nyc.jpg">
@@ -844,18 +914,18 @@ left: 380px;
 	
 
   <div class="explanation">
-    
-      <p><span class="highlight">It Glows</u>, <u>It Searches</u>&mdash;<br>May 31st, 2017 at midnight</span></p>
+      
+      <!--Close explanation-->
+ 
+      <p><div class="explanation2">
+      <u>It Glows</u>,<u> It Searches</u> 
+      <div class="picture">
+        <p>Taken from Brooklyn Heights <br>May 31st, 2017</p> 
+      <img id="skyline" src="images/skyline.jpg">
+      
+      </div>
+      </div> was a one time night lighting performance in New York City, by and for its people.<br>May 31st, 2017 </p> 
 
-      <p><u>It Glows</u>, <u>It Searches</u> is <br>a one time night lighting performance in <span class="highlight">New York City,</span> by and for its people.</p>
-
-      <p>Like a firefly, a window flashes in patterns that are unique <br>to itself&mdash;it exists as its own optical signal, as well as part of the overall flashing ritual <br> of the Manhattan night skyline.</p>
-
-      <p>During <u>It Glows</u>, <u>It Searches</u>&mdash;which is best experienced from Brooklyn Heights Promenade&mdash;Manhattan's windows will be choreographed in a skyline&mdash;<br>or environment&mdash;of blinking patterns that explore and reflect the human experience amidst the urban landscape.</p>
-
-      <p>All participating buildings <br> will receive guide sheets <br> with instructions to each resident on when to turn <br> their lights on&mdash;participants <br> will be given a light switch plate, designed for the event.</p>
-
-      <p>We want to thank our sponsors in contributing to this <br>one-of-a-kind New York City commemoration. </p>
 	</div> <!--Close explanation-->
 
 	<div id="container">
