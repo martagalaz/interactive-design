@@ -1,5 +1,5 @@
 $(document).ready(function() {
-       animateDiv($('.a'));
+        animateDiv($('.a'));
         animateDiv($('.b'));
         animateDiv($('.c'));
         animateDiv($('.d'));
@@ -12,6 +12,19 @@ $(document).ready(function() {
         animateDiv($('.k'));
         animateDiv($('.l'));
         animateDiv($('.m'));
+        animateDiv($('.n'));
+        animateDiv($('.o'));
+        animateDiv($('.p'));
+        animateDiv($('.q'));
+        animateDiv($('.r'));
+        animateDiv($('.s'));
+        animateDiv($('.t'));
+        animateDiv($('.u'));
+        animateDiv($('.v'));
+        animateDiv($('.w'));
+        animateDiv($('.x'));
+        animateDiv($('.y'));
+        animateDiv($('.z'));
 
 });
 
@@ -49,12 +62,15 @@ function calcSpeed(prev, next) {
 
     var greatest = x > y ? x : y;
 
-    var speedModifier = 0.05;
+    var speedModifier = 0.3;
 
     var speed = Math.ceil(greatest / speedModifier);
 
     return speed;
 
 }
+
+
+
 
 

@@ -92,20 +92,22 @@
     letter-spacing: 1px;
   }
 
+/*
   .nav-item.paom .title img {
     width: 87px;
     margin: 0 auto;
     color: black;
   }
+*/
 
   .nav-item.last {
     border-right: 0;
   }
 
   .nav-item .icon {
-    padding: 36px 0 8px;
+    padding: 36px 0px 8px;
     width: 100px;
-    margin: 0 auto;
+    margin: 0px auto;
     margin-top: -14px;
   }
 
@@ -114,11 +116,11 @@
     font-size: 15pt;
   }
 
-  #wrapper .title {
+  .wrapper .title {
     visibility: hidden;
   }
 
-  #wrapper:hover .title {
+  .wrapper:hover .title {
     visibility: visible;
   }
 
@@ -131,45 +133,41 @@
     color: black;
   }
 
-  img:hover {
+  .navImg:hover {
     width: 95px;
     height: 95px;
   }
 
-  #wrapper {
+  .wrapper {
     margin-left: 10px;
   }
 
-    #fooObject:hover {
- /* simple box */
-  width: 200;
-  height: 267; }
 
 }
 
   @media screen and (max-width: 1220px) {
 
   
-    #wrapper .title {
+    .wrapper .title {
     visibility: hidden;
     }
 
-    #wrapper:hover .title {
+    .wrapper:hover .title {
     visibility: visible;
     }
 
     #container {
-      border: 0;
+      border: none;
     }
   }
    
     @media screen and (max-width: 900px) {
 
-    #wrapper .title {
+    .wrapper .title {
     visibility: hidden;
     }
 
-    #wrapper:hover .title {
+    .wrapper:hover .title {
     visibility: visible;
     }
 
@@ -189,7 +187,7 @@
 
 	}
 
-    #wrapper .title {
+    .wrapper .title {
     visibility: visible;
     }
 
@@ -218,25 +216,6 @@
 
 </style>
 
-<script type="text/javascript">
-
-var foo = null; 
-
-function doMove() {
-  foo.style.top = parseInt(foo.style.top)-1+'px';
-  setTimeout(doMove,1); 
-}
-
-function init() {
-  foo = document.getElementById('fooObject'); 
-  foo.style.top = '600px'; 
-  doMove(); 
-}
-
-window.onload = init;
-
-</script>
-
 </head>
 
 <body>
@@ -253,21 +232,12 @@ window.onload = init;
       <div class="header">
         <div id="large-nav">
 
-          <div id="wrapper">
-            <a href="index.html" class="nav-item third">
-              <div class="icon">
-                <img src="images/itblack.svg" width="100" height="100">
-              </div>
-              <div class="title">
-                It
-              </div>
-            </a>
-          </div>
+        
 
-          <div id="wrapper">
+          <div class="wrapper">
             <a href="invited.html" class="nav-item">
               <div class="icon">
-                <img class="nav" src="images/invitedblack.svg" width="100" height="100">
+                <img class="nav navImg" src="images/invitedblack.svg" width="100" height="100">
               </div>
               <div class="title">
                 You
@@ -303,6 +273,25 @@ window.onload = init;
       <p>The event is public. </p>	
 	</div> <!--Close explanation-->
  
+
+<script type="text/javascript">
+
+var foo = null; 
+
+function doMove() {
+  foo.style.top = parseInt(foo.style.top)-1+'px';
+  setTimeout(doMove,1); 
+}
+
+function init() {
+  foo = document.getElementById('fooObject'); 
+  foo.style.top = '600px'; 
+  doMove(); 
+}
+
+window.onload = init;
+
+</script>
 
 </body>
 </html>
