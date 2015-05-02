@@ -19,7 +19,7 @@ function launchAPI () {
       randomX = Math.floor((Math.random() * 360) + 1);
       randomY = Math.floor((Math.random() * 360) + 1);
       $("<img />").attr("src", item.media.m).addClass("draggable image-" + i).appendTo("#images").css({"left": randomX,"top": randomY }).draggable();
-      if ( i == 9) return false;
+      if ( i == 14) return false;
     });
   });
 }
