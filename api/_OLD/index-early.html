@@ -1,0 +1,258 @@
+
+<!-- saved from url=(0192)file:///Users/martagalazcancio/Dropbox/Marta%20Galaz%20Studio/01%20Proyectos%20Activos/*Yale%20University%20Prelim/Semester%20II/Interactive%20Design/GitHub/interactive-design/api/index-4.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style>img{  }</style>
+  <script src="./index_files/jquery-1.10.2.js"></script>
+  <script src="./index_files/jquery-ui.js"></script>
+  <style type="text/css">
+
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ @font-face {
+    font-family: 'apercumedium';
+    src: url('apercu_medium-webfont.eot');
+    src: url('apercu_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('apercu_medium-webfont.woff2') format('woff2'),
+         url('apercu_medium-webfont.woff') format('woff'),
+         url('apercu_medium-webfont.ttf') format('truetype'),
+         url('apercu_medium-webfont.svg#apercumedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    
+  body {
+	   color: #5CE6B8 ;
+	   background-color: white;
+	   webkit-font-smoothing: antialiased !important;
+		 font-family: 'apercumedium';
+     font-size: 11px;
+	}
+
+#images{
+	  width: 550px;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 550px;
+    position: relative;
+    background-color: white;
+    background-image:
+    linear-gradient(
+      to bottom,
+      #5CE6B8,
+      white 30%
+    );
+    border: 15px solid #5CE6B8;
+}
+
+.refresh{
+	position:fixed;
+	right: 30px;
+	top: 30px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'fonts/raisonnedemibold';
+}
+
+img {
+  position: absolute;
+  width: 170px;
+  -webkit-filter: hue-rotate(40deg) saturate(1.5); 
+}
+
+textarea {
+  border:2px solid #5CE6B8 ;
+  padding: 5px 10px;
+  font-family: 'apercumedium';
+  font-size: 11px;
+  height: 26px;
+  width: 120px;
+  color: #5CE6B8 ;
+  margin-bottom: -10px;
+  background:none;
+}
+
+.text{
+	position: fixed;
+	right: 30px;
+	top: 40px;
+}
+
+.draggable {
+  cursor: move;
+  background-color:red; display:inline-block; 
+}
+
+.nav {
+  margin: 0 auto;
+  width: 735px;
+  margin-top: 50px;
+} 
+
+.nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+  
+}
+
+.buttonnav {
+  padding: 5px 7px;
+  box-shadow: 3px 3px 4px #5CE6B8;
+}
+
+.buttonnav:hover {
+  padding: 5px 7px;
+  background: black;
+  box-shadow: 3px 3px 4px #5CE6B8;
+}
+
+.buttonnavcolor {
+  box-shadow: 3px 3px 4px #5CE6B8;
+  padding: 5px 7px;
+
+}
+
+.buttonnavcolor:hover {
+  box-shadow: 3px 3px 4px #5CE6B8;
+  background: black;
+  padding: 5px 7px;
+}
+
+.send {
+  padding-bottom: 2px;
+  border-bottom: 2px solid;
+}
+
+.nav li:hover {
+  cursor: pointer;
+}
+
+.nav li:last-of-type {
+ margin-right: 0px;
+}
+
+</style>
+</head>
+
+<body style="cursor: auto;">
+
+
+<ul class="nav">
+  <li class="buttonnav" onclick="history.go(0)">1. Arrange a Bouquet</li>
+  <li>2. Drag/Drop Images</li>
+  <li class="buttonnavcolor">3. Change Background Color</li>
+  <li class="textbox"><textarea>4. Type a Note</textarea></li>
+  <li class="send">5. Share &#9786;</li>
+</ul>
+
+  <!-- <form action="">
+  </form> -->
+	<!-- <input class="refresh" type="button" value="ARRANGE A BOUQUET" onClick="history.go(0)"> -->
+		<!-- <p class="text"><textarea>...</textarea></p> -->
+  
+  <div id="images">
+  <img src="./index_files/17131343217_b2d6e4d9e7_m.jpg" class="draggable image-0 ui-draggable ui-draggable-handle" style="left: 44px; top: 219px;"><img src="./index_files/17148714089_f3882d65c0_m.jpg" class="draggable image-1 ui-draggable ui-draggable-handle" style="left: 127px; top: 135px;"><img src="./index_files/17317579102_cd6e11bd33_m.jpg" class="draggable image-2 ui-draggable ui-draggable-handle" style="left: 37px; top: 188px;"><img src="./index_files/16696977284_20d9ac2308_m.jpg" class="draggable image-3 ui-draggable ui-draggable-handle" style="left: 98px; top: 105px;"><img src="./index_files/17126862419_281589681d_m.jpg" class="draggable image-4 ui-draggable ui-draggable-handle" style="left: 291px; top: 16px;"><img src="./index_files/17116157538_1d28eff534_m.jpg" class="draggable image-5 ui-draggable ui-draggable-handle" style="left: -31px; top: -27px;"><img src="./index_files/17302051102_161fd9ce55_m.jpg" class="draggable image-6 ui-draggable ui-draggable-handle" style="left: -16px; top: 339px;"><img src="./index_files/17271488006_976a8182a9_m.jpg" class="draggable image-7 ui-draggable ui-draggable-handle" style="left: 389px; top: 56px;"><img src="./index_files/17092541588_49749c75ba_m.jpg" class="draggable image-8 ui-draggable ui-draggable-handle" style="left: 385px; top: 205px;"><img src="./index_files/17079015839_651a2703be_m.jpg" class="draggable image-9 ui-draggable ui-draggable-handle" style="left: 236px; top: 271px;"></div>
+
+<script>
+
+var randomX = 0;
+var randomY = 0;
+
+function launchAPI () {
+
+	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+  {
+    tags: "single flower",
+    tagmode: "any",
+    format: "json",
+  },
+  function(data) {
+    $.each(data.items, function(i,item){
+    	randomX = Math.floor((Math.random() * 360) + 1);
+    	randomY = Math.floor((Math.random() * 360) + 1);
+      $("<img />").attr("src", item.media.m).addClass("draggable image-" + i).appendTo("#images").css({"left": randomX,"top": randomY }).draggable();
+      if ( i == 9) return false;
+    });
+  });
+}
+
+launchAPI ();
+
+var colors = [
+    "black",
+    "#9933FF",
+    "blue",
+    "yellow",
+    "#FF9900",
+    "red",
+    "white",
+    "#FF33CC"
+];
+
+var counter = 0;
+
+$('.buttonnavcolor').click(function(){
+    console.log("clicked");
+    var currentColor = colors[counter % colors.length];
+    $('body').css("background", currentColor);
+    counter++;
+});
+
+</script>
+
+
+</body></html>
